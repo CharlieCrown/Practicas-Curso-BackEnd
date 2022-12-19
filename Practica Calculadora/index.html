@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="icon" href="./IMG/calc.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./Scripts-Cal/Display.js" type="text/javascript"></script>
+    <script src="./Scripts-Cal/Calcu.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculadora dark">
+            <div class="display">
+                <div id="val-anterior"></div>
+                <div id="val-actual"></div>
+            </div>
+            <button class="col-2" id="clear" onclick="display.borrarTodo()">C</button>
+            <button id="bak" onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">&divide;</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">&times;</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <div class="theme-toggler active"></div>
+            <button class="numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" id="igu" value="igual">=</button>
+        </div>
+    </div>
+
+    <script src="./Scripts-Cal/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
